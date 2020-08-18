@@ -267,21 +267,29 @@ footer p:first-child{
     flex-direction: row;
     justify-content: space-evenly;
 }
+.project-main-item__main-text{
+    width: 40%;
+    padding: 30px;
+    display: flex;
+}
+.project-main-item__main-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.project-main-item__main-full-screen{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 50px;
+}
 /* ================|Project 1|================ */
 #project-1>.project-main{
     background: linear-gradient(to top, #b69ca5, #ffffff);
     color: rgb(122, 122, 122);
     padding-bottom: 50px;
 }
-#project-1 .project-main-item__main-text{
-    width: 40%;
-    padding: 10px;
-}
-#project-1 .project-main-item__main-img{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-}
+
 /* ================|Project 2|================ */
 #project-2>.project-main{
     background: linear-gradient(to top, #cadae6, #8391ab);
@@ -289,4 +297,22 @@ footer p:first-child{
 }
 #project-2>.project-main>.project-main-item:last-child>.project-main-item__main img{
     width: 100%;  
+}
+/* ================|Project 3|================ */
+#project-3>.project-main{
+    background: linear-gradient(to top, #dbdbdb, #d9d9d9);
+    color: #5b5c5c;
+    font-size: 1.5rem;
+    padding-bottom: 100px;
+}
+#project-3>.project-main>.project-main-item:first-child{
+    margin-top: 0px;
+}
+#project-3>.project-main>.project-main-item:nth-child(2)>.project-main-item__main img{
+    width: 22%;
+    height: auto;
+    margin-bottom: 50px;
+}
+#project-3>.project-main>.project-main-item:last-child>.project-main-item__main img{
+    width: 40%;
 }
