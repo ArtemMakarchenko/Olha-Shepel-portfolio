@@ -233,6 +233,11 @@ footer p:first-child{
 #project-4>.project-header{
     background: url(../img/project-4/main-photo.png) left top repeat-x;
 }
+#project-5>.project-header{
+    background-image: url(../img/project-5/project-5-img-1.png);
+    background-position: 80% center;
+    background-size: 35%;
+}
 .project-header__text{
     width: 100%;
     height: 100%;
@@ -315,4 +320,17 @@ footer p:first-child{
 }
 #project-3>.project-main>.project-main-item:last-child>.project-main-item__main img{
     width: 40%;
+}
+/* ================|Project 5|================ */
+#project-5 .project-main-item__main{
+    flex-flow: wrap;
+}
+#project-5>.project-main img{
+    width: 30%;
+    margin-bottom: 40px;
+}
+#project-5>.project-main>.project-main-item>.project-main-item__main img:nth-child(1),
+#project-5>.project-main>.project-main-item>.project-main-item__main img:nth-child(2),
+#project-5>.project-main>.project-main-item>.project-main-item__main img:nth-child(3){
+    margin-bottom: 70px;
 }
