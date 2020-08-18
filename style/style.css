@@ -85,6 +85,25 @@ header{
     letter-spacing: 10px;
     word-spacing: 25px;
 }
+.header-menu{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    display: flex;
+    padding: 10px 0px 20px 50px;
+
+}
+.header-menu a{
+    text-decoration: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: rgb(73, 73, 73);
+}
 .works{
     display: flex;
     flex-wrap: wrap;
@@ -456,6 +475,13 @@ footer p:first-child{
 }
 /* ===========================================| < 480px - Portrait phones and smaller |=================================================== */
 @media (max-width: 480px) {
+    .header-menu{
+        padding: 10px 0px 0px 20px; 
+        height: 50px;
+    }
+    .header-menu a{
+        font-size: 1rem;
+    }
     .header-text h4 {
         font-size: 1rem;
     }
