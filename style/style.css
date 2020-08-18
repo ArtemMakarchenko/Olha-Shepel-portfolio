@@ -252,28 +252,40 @@ footer p:first-child{
     width: 100%;
     height: auto; 
 }
-#project-1>.project-main{
-    background: linear-gradient(to top, #b69ca5, #ffffff);
-}
-/* ===================================== */
-#project-2>.project-main{
-    background: linear-gradient(to top, #cadae6, #8391ab);
-}
-#project-2 .project-main-item{
+.project-main-item{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-#project-2 .project-main-item__header{
+.project-main-item__header{
     width: 100%;
     padding: 70px;
-    color: #fff;
     font-size: 1.7rem;
 }
-#project-2 .project-main-item__main{
+.project-main-item__main{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+/* ================|Project 1|================ */
+#project-1>.project-main{
+    background: linear-gradient(to top, #b69ca5, #ffffff);
+    color: rgb(122, 122, 122);
+    padding-bottom: 50px;
+}
+#project-1 .project-main-item__main-text{
+    width: 40%;
+    padding: 10px;
+}
+#project-1 .project-main-item__main-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+/* ================|Project 2|================ */
+#project-2>.project-main{
+    background: linear-gradient(to top, #cadae6, #8391ab);
+    color: #fff;
 }
 #project-2>.project-main>.project-main-item:last-child>.project-main-item__main img{
     width: 100%;  
