@@ -238,6 +238,11 @@ footer p:first-child{
     background-position: 80% center;
     background-size: 35%;
 }
+#project-6>.project-header{
+    background-image: url(../img/previews/prev-project-6.png);
+    background-position: 90% center;
+    background-size: 40%;
+}
 .project-header__text{
     width: 100%;
     height: 100%;
@@ -333,4 +338,9 @@ footer p:first-child{
 #project-5>.project-main>.project-main-item>.project-main-item__main img:nth-child(2),
 #project-5>.project-main>.project-main-item>.project-main-item__main img:nth-child(3){
     margin-bottom: 70px;
+}
+/* ================|Project 6|================ */
+#project-6>.project-main img{
+    width: 50%;
+    margin-bottom: 50px;
 }
