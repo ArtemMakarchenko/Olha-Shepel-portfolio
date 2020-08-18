@@ -1,34 +1,15 @@
 /* Указываем box sizing */
-*,
-*::before,
-*::after {
+*,*::before,*::after {
   box-sizing: border-box;
 }
-
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul[class],ol[class] {
   padding: 0;
 }
-
 /* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+body,h1,h2,h3,h4,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd{
   margin: 0;
 }
-
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
@@ -36,29 +17,23 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
-
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+ul[class],ol[class] {
   list-style: none;
 }
-
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
 /* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
   display: block;
 }
-
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
   margin-top: 1em;
 }
-
 /* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
@@ -66,7 +41,6 @@ textarea,
 select {
   font: inherit;
 }
-
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -80,9 +54,7 @@ a,p,h1,h2,h3,h4,h5,h6{
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 300;
 }
-
 header{
-
     width: 100%;
     height: 100vh;
     background-color: #0b0b0b;
@@ -90,7 +62,6 @@ header{
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 .header-text{
     display: flex;
@@ -206,6 +177,7 @@ footer p:first-child{
     width: 100%;
     height: auto;
 }
+
 .project-header{
     width: 100%;
     height: 100vh;
@@ -223,7 +195,8 @@ footer p:first-child{
 #project-3>.project-header{
     background: url(../img/animations/gif-3.gif) right center no-repeat,
                 url(../img/project-1-header-bg.png) left top repeat-x;
-    background-size: contain;     
+    background-size: contain;
+    color:#fff;    
 }
 #project-4>.project-header{
     background-image: url(../img/project-4/project-4-img-1.png);
@@ -278,6 +251,7 @@ footer p:first-child{
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 .project-main-item__main-text{
     width: 40%;
@@ -288,6 +262,7 @@ footer p:first-child{
     width: 40%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .project-main-item__main-full-screen{
     display: flex;
@@ -331,7 +306,14 @@ footer p:first-child{
 /* ================|Project 4|================ */
 #project-4>.project-header>.project-header__text{
     padding-left: 40px;
-}   
+} 
+#project-4>.project-main>.project-main-item>.project-main-item__main{
+    flex-wrap: wrap;
+}
+#project-4>.project-main>.project-main-item>.project-main-item__main img{
+    width: 80%;
+    margin-bottom: 40px;
+} 
 
 /* ================|Project 5|================ */
 #project-5 .project-main-item__main{
@@ -358,4 +340,191 @@ footer p:first-child{
 #project-8>.project-main img{
     width: 30%;
     margin-bottom: 40px;
+}
+/* ===========================================| 1199px - Medium desktops and landscape tablets and|=============================== */
+@media (max-width: 1199px) {
+    #project-2>.project-main>.project-main-item:first-child img{
+        width: 25%;
+    }
+    #project-2>.project-main>.project-main-item:nth-child(3) img{
+        width: 40%;
+    }
+    #project-2>.project-main>.project-main-item:nth-child(4) img{
+        width: 80%;
+    }
+    #project-3>.project-main>.project-main-item:first-child>.project-main-item__main{
+        flex-flow: wrap;
+    }
+    #project-3>.project-main>.project-main-item:first-child .project-main-item__main-text{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    #project-3>.project-main>.project-main-item:first-child .project-main-item__main-img{
+        width: 90%;
+    }
+}
+/* ===========================================| 991px - Portrait tablets and small desktops |===================================== */
+@media (max-width: 991px) {
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+    .works-header h3 {
+        font-size: 2rem;
+    }
+    .works-item__img {
+        height: 200px;
+    }
+    .works-item__text h3 {
+        font-size: 1.5rem;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+    #project-1>.project-main img{
+        width: 35%;
+    }
+    #project-1 .project-main-item__main {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #project-1 .project-main-item__main-text {
+        width: 90%;
+    }
+    #project-1 .project-main-item__main-img {
+        width: 60%;
+    }
+    #project-1 .project-main-item__main-img>img{
+        width: 60%;
+    }
+    .project-header__text h1 {
+        font-size: 2.5rem;
+    }
+    .project-header__text{
+        font-size: 1rem;
+    }
+    .project-main-item__header {
+        padding: 50px;
+    }
+    #project-2>.project-main>.project-main-item:nth-child(2) img{
+        width: 80%;
+    }
+    #project-3 p{
+        font-size: 1rem;
+    }
+}
+/* ===========================================| 767px - Landscape phones and portrait tablets |=================================== */
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2rem;
+    }
+    .works-header h3 {
+        font-size: 1.5rem;
+    }
+    .woks-main {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .works-item {
+        width: 40%;
+    }
+    .works-item__img {
+        height: 170px;
+    }
+    .works-item__text h3 {
+        font-size: 1.2rem;
+    }
+    .project-header__text h1 {
+        font-size: 1.7rem;
+    }
+    .project-main-item__header {
+        font-size: 1.3rem;
+        padding: 30px;
+    }
+    #project-3>.project-main>.project-main-item:nth-child(3)>.project-main-item__main{
+        flex-wrap: wrap;
+    }
+    #project-3>.project-main>.project-main-item:nth-child(3)>.project-main-item__main img{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    #project-5>.project-main img{
+        width: 40%;
+    }
+    #project-8>.project-main img{
+        width: 40%;
+    }
+}
+/* ===========================================| < 480px - Portrait phones and smaller |=================================================== */
+@media (max-width: 480px) {
+    .header-text h4 {
+        font-size: 1rem;
+    }
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+    .works-item {
+        width: 80%;
+    }
+    .works-item__img {
+        height: 250px;
+    }
+    .works-item__text h3 {
+        font-size: 1.5rem;
+    }
+    #project-1>.project-main img {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .project-header__text {
+        padding-left: 20px;
+    }
+    #project-2>.project-main>.project-main-item:first-child img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    #project-2>.project-main>.project-main-item:first-child>.project-main-item__main{
+        flex-wrap: wrap;
+    }
+    #project-2>.project-main>.project-main-item:nth-child(2) img{
+        width: 95%;
+    }
+    #project-2>.project-main>.project-main-item:nth-child(3)>.project-main-item__main{
+        flex-wrap: wrap;
+    }
+    #project-2>.project-main>.project-main-item:nth-child(3) img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    #project-3>.project-main>.project-main-item:nth-child(2)>.project-main-item__main{
+        flex-wrap: wrap;
+    }
+    #project-3>.project-main>.project-main-item:nth-child(2)>.project-main-item__main img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    #project-4>.project-header>.project-header__text{
+        justify-content: flex-start;
+    }
+    #project-4>.project-header>.project-header__text h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #project-5>.project-main img{
+        width: 80%;
+    }
+    #project-6>.project-main img{
+        width: 80%;
+    }
+    #project-8>.project-main img{
+        width: 80%;
+    }
+}
+/* ===========================================| < 320px - Iphone 5 |====================================================================== */
+@media (max-width: 320px) {
+    .works-item__text h3 {
+        font-size: 1.2rem;
+    }
+    .works-item__text{
+        font-size: 0.8rem;
+    }
 }
