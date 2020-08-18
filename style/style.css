@@ -113,12 +113,6 @@ header{
     font-size: 4rem;
     letter-spacing: 10px;
     word-spacing: 25px;
-    transition-property: all;
-    transition-duration: 1.5s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-    opacity: 0;
-    margin-left: 50%;
 }
 .works{
     display: flex;
@@ -152,6 +146,7 @@ header{
     margin-bottom: 40px;
     box-sizing: border-box;
 }
+
 #works-item__img-1{
     background-color: #f3d5e7;
 }
@@ -231,7 +226,8 @@ footer p:first-child{
     background-size: contain;     
 }
 #project-4>.project-header{
-    background: url(../img/project-4/main-photo.png) left top repeat-x;
+    background-image: url(../img/project-4/project-4-img-1.png);
+    background-size: contain;
 }
 #project-5>.project-header{
     background-image: url(../img/project-5/project-5-img-1.png);
@@ -240,6 +236,11 @@ footer p:first-child{
 }
 #project-6>.project-header{
     background-image: url(../img/previews/prev-project-6.png);
+    background-position: 90% center;
+    background-size: 40%;
+}
+#project-8>.project-header{
+    background-image: url(../img/project-8/project-8-img-7.png);
     background-position: 90% center;
     background-size: 40%;
 }
@@ -276,6 +277,7 @@ footer p:first-child{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-bottom: 50px;
 }
 .project-main-item__main-text{
     width: 40%;
@@ -326,6 +328,11 @@ footer p:first-child{
 #project-3>.project-main>.project-main-item:last-child>.project-main-item__main img{
     width: 40%;
 }
+/* ================|Project 4|================ */
+#project-4>.project-header>.project-header__text{
+    padding-left: 40px;
+}   
+
 /* ================|Project 5|================ */
 #project-5 .project-main-item__main{
     flex-flow: wrap;
@@ -343,4 +350,12 @@ footer p:first-child{
 #project-6>.project-main img{
     width: 50%;
     margin-bottom: 50px;
+}
+/* ================|Project 8|================ */
+#project-8 .project-main-item__main{
+    flex-flow: wrap;
+}
+#project-8>.project-main img{
+    width: 30%;
+    margin-bottom: 40px;
 }
