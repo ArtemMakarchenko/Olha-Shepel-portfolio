@@ -269,7 +269,6 @@ footer p:first-child{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 50px;
     flex-wrap: wrap;
 }
 .project-main-item__main-text{
@@ -466,6 +465,13 @@ footer p:first-child{
         width: 80%;
         margin-bottom: 50px;
     }
+    #project-4>.project-header{
+        background-size: cover;
+        background-position: left center;
+    }
+    #project-4>.project-header>.project-header__text{
+        background-color: rgba(255,255,255,0.5);
+    }
     #project-5>.project-main img{
         width: 40%;
     }
@@ -528,21 +534,31 @@ footer p:first-child{
         width: 80%;
         margin-bottom: 40px;
     }
-    #project-4>.project-header>.project-header__text{
+    /*#project-4>.project-header>.project-header__text{
         justify-content: flex-start;
-    }
+    } 
     #project-4>.project-header>.project-header__text h1 {
         margin-top: 10px;
         margin-bottom: 10px;
+    } */
+    #project-5>.project-header {
+        background-position: center bottom;
+        background-size: 50%;
     }
     #project-5>.project-main img{
         width: 80%;
-    }
+    }  
     #project-6>.project-main img{
         width: 80%;
     }
+    #project-6>.project-header {
+        background-position: center bottom;
+    }
     #project-8>.project-main img{
         width: 80%;
+    }
+    #project-8>.project-header {
+        background-position: center bottom;
     }
 }
 /* ===========================================| < 320px - Iphone 5 |====================================================================== */
